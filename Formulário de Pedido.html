@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedido</title>
+</head>
+<body>
+    <!--
+- Nome do cliente 
+- Endereço de entrega 
+- Produto (select com pelo menos 3 opções)
+- Quantidade 
+- Método de pagamento (radio buttons: Cartão de Crédito, Boleto, Transferência)
+- Aceitar termos e condições (checkbox)
+- Botões de enviar e limpar formulário-->
+<form action="seu-script.php" method="post">
+<label><strong>Cliente:</strong></label>
+<input type="text" id="nome" placeholder="Nome do Cliente">
+<br><br>
+
+<label><strong>Endereço de entrega:</strong></label>
+<br>
+<textarea placeholder="Digite seu endereço" rows=2></textarea></body>
+<br><br>
+
+<label><strong>Qual prato gostaria?</strong></a>
+    <select name="produto">
+        <option>Lasanha</option>
+        <option>Sushi</option>
+        <option>Feijoada</option>
+    </select>
+<br><br>
+
+<label><strong>Quantidade de Pratos:</strong></label>
+<input type="number" placeholder="Quantidade">
+<br><br>
+
+
+<label><strong>Método de pagamento:</strong></label>
+<br>
+
+<input type="radio" name="metodo">
+<label>Dinheiro</label>
+<br>
+
+<input type="radio" name="metodo">
+<label>Cartão de Crédito</label>
+<br>
+
+<input type="radio" name="metodo">
+<label>Boleto</label>
+<br>
+
+<input type="radio" name="metodo">
+<label>Transferência</label>
+<br><br>
+
+<label><strong>Termos e Condições:</strong></label>
+<br>
+
+<input type="checkbox" name="Termos">
+<label>Reservas</label>
+<br>
+
+<input type="checkbox" name="Termos">
+<label>Pagamento</label>
+<br>
+
+<input type="checkbox" name="Termos">
+<label>Alimentos e Bebidas</label>
+<br>
+
+<input type="checkbox" name="Termos">
+<label>Alergias</label>
+<br>
+
+<input type="checkbox" name="Termos">
+<label>Conduta</label>
+<br>
+
+<input type="checkbox" name="Termos">
+<label>Responsabilidade</label>
+<br><br>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+</html>

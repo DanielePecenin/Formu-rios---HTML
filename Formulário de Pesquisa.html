@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+</head>
+<body>
+    <!--
+- Nome
+- Idade 
+- Satisfação geral (select com opções: Muito Satisfeito, Satisfeito, Neutro, Insatisfeito, Muito
+Insatisfeito)
+- Áreas de melhoria (checkbox com opções: Atendimento, Produto, Preço, Entrega)
+- Comentários adicionais (textarea)
+- Botão de enviar-->
+
+<label><strong>Nome:</strong></label>
+<input type="text" id="nome" placeholder="Nome completo">
+
+<br><br>
+<label><strong>Idade:</strong></label>
+<input type="number" placeholder="Idade"> 
+
+<br><br>
+
+<label><strong>Satisfação Geral:</strong></label>
+<br>
+
+<input type="radio" name="satisfação">
+<label>Muito Satisfeito</label>
+<br>
+
+<input type="radio" name="satisfação">
+<label>Satisfeito</label>
+<br>
+
+<input type="radio" name="satisfação">
+<label>Neutro</label>
+<br>
+
+<input type="radio" name="satisfação">
+<label>Insatisfeito</label>
+<br>
+
+<input type="radio" name="satisfação">
+<label>Muito Insatisfeito</label>
+<br><br>
+
+
+<label><strong>Areas de Melhoria:</strong></label>
+<br>
+
+<input type="checkbox" name="melhoria">
+<label for="leitura">Atendimento</label>
+<br>
+
+<input type="checkbox" name="melhoria">
+<label for="leitura">Produto</label>
+<br>
+
+<input type="checkbox" name="melhoria">
+<label for="leitura">Preço</label>
+<br>
+
+<input type="checkbox" name="melhoria">
+<label for="leitura">Entrega</label>
+<br><br>
+
+<label><strong>Mensagem:</strong></label>
+<br>
+<textarea id="mensagem" name="mensagem" rows="5" cols="33" required></textarea><br><br>
+<br>
+
+<input type="submit" value="Enviar">
+</body>
+</html>
+
