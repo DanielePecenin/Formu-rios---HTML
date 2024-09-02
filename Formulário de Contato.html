@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+
+<label><strong>Nome:</strong></label>
+<input type="text" id="nome" placeholder="Nome">
+<br><br>
+
+<label><strong>E-mail:</strong></label>
+<input type="text" id="e-mail" placeholder="E-mail" required>
+<br><br>
+
+<label><strong>Assunto:</strong></label>
+<select name="Assunto">
+    <option>Dúvida</option>
+    <option>Sugestão</option>
+    <option>Reclamação</option>
+    <option>Outro</option>
+  </select>
+  <br><br>
+<label><strong>Mensagem:</strong></label>
+<br>
+<textarea id="mensagem" name="mensagem"  placeholder="Digite sua mensagem" rows="3" cols="25" required></textarea><br><br>
+<br>
+  
+<label><strong>Preferência de Contato:</strong></label>
+<br>
+<input type="checkbox" name="contato" id="telefone-checkbox" onclick="document.getElementById('telefone-field').style.display = this.checked ? 'block' : 'none';">
+<label for="telefone-checkbox">Telefone</label>
+<br>
+<input type="checkbox" name="contato" id="email-checkbox">
+<label for="email-checkbox">E-mail</label>
+<br><br>
+
+<div id="telefone-field" style="display: none;">
+    <label for="telefone"><strong>Número de Telefone:</strong></label>
+    <input type="tel" id="telefone" placeholder="(xx) xxxx-xxxx">
+</div>
+</body>
+</html>
